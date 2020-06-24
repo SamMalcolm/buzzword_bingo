@@ -1,0 +1,44 @@
+.bbContainer {
+    width: calc(100% - 30px);
+    max-width: 700px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+
+    .bingoBoard {
+        .bingoTile {
+            border: 1px solid black;
+            display: inline-block;
+            position: relative;
+            background: white;
+            transition: 0.2s ease;
+            cursor: pointer;
+
+            &.selected {
+                background: #333333;
+                color: white;
+            }
+
+            &:hover {
+                background: #dadada;
+
+                &.selected {
+                    background: #333333;
+                    color: white;
+                }
+            }
+
+            .bingoTileTitle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
