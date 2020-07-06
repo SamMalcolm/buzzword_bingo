@@ -14,7 +14,7 @@
             background: white;
             transition: 0.2s ease;
             cursor: pointer;
-
+			
             &.selected {
                 background: #333333;
                 color: white;
@@ -37,8 +37,18 @@
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+				justify-content: center;
+				word-wrap: break-word;
+				h3 {
+					font-size:2.5vw; 
+				}
             }
         }
     }
 }
+
+@media screen and (min-width: 900px) {
+	.bbContainer .bingoBoard .bingoTile .bingoTileTitle h3 {
+	   font-size: 22px;
+	}
+  }
